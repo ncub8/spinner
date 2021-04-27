@@ -17,16 +17,18 @@ function Card(props){
     }
 
     const onStartClick = () => {
-        if(percent < 100){
-            setSpinning(true);
-            setSpinInterval(setInterval(() => {
-                setPercent(percent => percent + 1);
-                handleChangeSpin(percent);
-                console.log("Interval", percent);
-            },300))
-        } else {
-            setSpinning(false);
-            clearInterval(spinInterval);
+        if(!spinning){
+            if(percent < 100){
+                setSpinning(true);
+                setSpinInterval(setInterval(() => {
+                    setPercent(percent => percent + 1);
+                    handleChangeSpin(percent);
+                    console.log("Interval", percent);
+                },300))
+            } else {
+                setSpinning(false);
+                clearInterval(spinInterval);
+            }
         }
     }
 

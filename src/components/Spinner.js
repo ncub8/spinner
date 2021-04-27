@@ -24,7 +24,7 @@ function Spinner({
                     <path d={arcCalculations(x,y,radius,startAngle,endAngle)}
                         stroke={color} fill="transparent" strokeWidth="3"
                         transform={`rotate(${rotate},${x},${y})`}/>
-                    <text x="50%" y="50%" textAnchor="middle" stroke="#51c5cf" strokeWidth="1px" dy=".3em">
+                    <text x="50%" y="50%" textAnchor="middle" stroke="#ccc" strokeWidth="1px" dy=".3em">
                         {centerValue}
                     </text>
                 </g>
