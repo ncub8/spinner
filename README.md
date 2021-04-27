@@ -27,7 +27,9 @@ If I had more time tot dedicate to this I would:
 
 ## External link to deployed component
 
-(Deployed Spinner Component)[https://spinner-jet.vercel.app/]
+[Deployed Spinner Component](https://spinner-jet.vercel.app/)
+
+## React App Instructions
 
 ### `yarn start`
 
