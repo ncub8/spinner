@@ -1,10 +1,20 @@
-# Getting Started with Create React App
+# React Spinner Component
+## John Moore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The main component is src/components/Spinner created in React
 
-## Available Scripts
+### Architectural decisions
 
-In the project directory, you can run:
+- The spinner was created as an svg to maximise scalability, performance, platform support. This would work on mobile devices as well as on the web.
+
+- The spinner is consumed by the Card which handles layout / configuration / Control. TThe spinner is highly parameterized via props so that things like size / color / position / inner text can be passed as props.
+
+- The Card simulates a loading indiicator by setting an interval that increments the percentage complete. 
+
+- A utilitty function converts percentages into degree values for drawing the paths of the spinner. This utility function would be reusable as well.
+
+- Finally, the Card is rendered by the App. This is just the default App by create-react-app clii and is just for ease of demo
+
 
 ### `yarn start`
 
